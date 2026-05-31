@@ -1,0 +1,16 @@
+"""
+Errors - 错误码定义
+"""
+
+from enum import IntEnum
+
+
+class ErrorCode(IntEnum):
+    SUCCESS = 0
+    TASK_NOT_FOUND = 1001
+    TASK_VALIDATION_FAILED = 1002
+    TASK_STATE_INVALID = 1003
+    RUNTIME_NOT_INITIALIZED = 2001
+    RUNTIME_ALREADY_RUNNING = 2002
+    QUEUE_FULL = 3001
+    INTERNAL_ERROR = 9999
